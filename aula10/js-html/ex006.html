@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="C:\Users\isabe\OneDrive\Área de Trabalho\Estudo\Javascript\aula10\css\style.css">
+</head>
+<body>
+    <div id="area" >
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', mouseClicou)
+        a.addEventListener('mouseenter', mouseEntrou)
+        a.addEventListener('mouseout', mouseSaiu)
+        function mouseClicou(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+            
+        }
+
+        function mouseEntrou(){
+            var entrou = document.querySelector('div#area')
+            entrou.innerText = 'Entrou na área!'
+        }
+
+        function mouseSaiu(){
+            var saiu = document.querySelector('div#area')
+            saiu.innerHTML = 'Saiu da Área!'
+            if(a.style.background == 'red'){
+                a.style.background = 'rgb(61, 160, 61)'
+            }
+        }    
+        </script>
+</body>
+</html>

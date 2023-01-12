@@ -1,0 +1,50 @@
+body{
+    background: rgb(70, 142, 236);
+    
+}
+
+h1{
+    text-align: center; color: white;
+    text-shadow: 5px 5px 10px black;
+}
+#bloco1{
+    border-width: medium; /*Inicio da borda solida*/
+    border-style: solid;
+    border-color: white; /*fim da borda solida*/
+    background-color: rgba(255, 255, 255, 0);
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    
+}
+#bloco2{
+    
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font: normal 15pt Arial;
+}
+#imgGroup1{
+    width: 400px;
+    height: 400px;
+}
+footer{
+    font: normal 15pt Arial;
+    color: white;
+    text-align: center;
+   /* tipo de borda no texto, ex embaixo*/
+   text-shadow: 5px 5px 10px black;
+   /*tipo de borda no texto
+   text-shadow: -1px -1px 0px rgb(12, 12, 12), 
+   -1px 1px 0px rgb(12, 12, 12),                    
+    1px -1px 0px rgb(12, 12, 12),                  
+    1px 0px 0px rgb(12, 12, 12);
+    */
+}

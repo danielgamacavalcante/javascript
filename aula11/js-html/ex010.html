@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="C:\Users\isabe\OneDrive\Área de Trabalho\Estudo\Javascript\aula11\favicon\favicon.ico" type="image/x-icon">
+    <style>
+        p{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <button type="button" onclick="calcular()">Verificar</button>
+    <div id="resp">Resultado</div>
+    <script>
+       
+        function calcular(){
+            var txtv = document.querySelector('input#txtvel')
+            var resp = document.querySelector('div#resp')
+            var vel = Number(txtv.value)
+            resp.innerHTML = `<p>Sua velocidade atual é <strong>${vel}km/h</strong></p>`
+
+            if( vel > 60){
+                resp.innerHTML += `<p>Você está <strong>MULTADO</strong></p>`
+            }else{
+                resp.innerHTML += `<p><code>Dirija sempre com <em>segurança</em></code></p>`
+            }
+
+        }
+    </script>
+</body>
+</html>
